@@ -1,0 +1,18 @@
+no: tekton.dev/v1beta1
+kind PipelineRun
+metadata:
+generateName: yaml-linting-pipeline-run-
+spe
+    pipelineRef:
+name; yaml-linting-pipeline
+  .workspaces:
+    - name: shared-workspace
+
+#      
+    volumeClaimTemplate:
+        - spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: as many mistakes as i could cram in 
